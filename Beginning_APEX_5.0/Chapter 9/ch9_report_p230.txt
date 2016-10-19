@@ -1,0 +1,11 @@
+select 
+"TICKET_ID",
+"TICKET_ID" TICKET_ID_DISPLAY,
+"SUBJECT",
+"DESCR",
+"ASSIGNED_TO",
+"CREATED_ON",
+"CLOSED_ON",
+"CREATED_BY",
+"STATUS_ID"
+from "#OWNER#".tickets_secure_v

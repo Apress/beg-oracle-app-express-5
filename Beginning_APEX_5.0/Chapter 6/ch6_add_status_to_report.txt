@@ -1,0 +1,11 @@
+select TICKET_ID,
+       SUBJECT,
+       DESCR,
+       CREATED_BY,
+       CREATED_ON,
+       CLOSED_ON,
+       ASSIGNED_TO,
+       STATUS
+  from TICKETS, 
+       STATUS_LOOKUP
+ where TICKETS.STATUS_ID = STATUS_LOOKUP.STATUS_ID

@@ -1,0 +1,1 @@
+this.triggeringElement.options[this.triggeringElement.selectedIndex].text == 'CLOSED'

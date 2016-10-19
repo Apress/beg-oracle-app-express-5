@@ -1,0 +1,13 @@
+SELECT
+  'f?p=&APP_ID.:200:' || :APP_SESSION || '::::P200_STATUS_ID:' || sl.status_id link,
+  sl.status label,
+  count(*) value
+FROM 
+  tickets_secure_v t, 
+  status_lookup sl
+WHERE 
+  t.status_id = sl.status_id
+GROUP BY 
+  sl.status_id, sl.status
+ORDER BY
+  3 DESC

@@ -1,0 +1,8 @@
+select TICKET_DETAILS_ID,
+       TICKET_ID,
+       DETAILS,
+       CREATED_BY,
+       CREATED_ON,
+       dbms_lob.getlength("ATTACHMENT") "ATTACHMENT"
+  from TICKET_DETAILS
+ where TICKET_DETAILS.TICKET_ID = :P210_TICKET_ID
